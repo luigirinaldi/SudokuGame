@@ -7,15 +7,19 @@
 			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-g",
-				"src\\main.cpp",
+				"src\\*.cpp",
 				"-o",
 				"build\\game.exe",
+				"-Iinclude" //makes sure include folder is part of include
+				// options for builidng SDL stuff 
+				/* 
 				"-IC:\\sdk\\SDL2-2.0.18\\x86_64-w64-mingw32\\include",
 				"-LC:\\sdk\\SDL2-2.0.18\\x86_64-w64-mingw32\\lib",
 				"-lmingw32",
 				"-lSDL2main",
 				"-lSDL2",
-				"-mwindows"
+				*/
+				//"-mwindows" //option that hides terminal output, disabled
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
